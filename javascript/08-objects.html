@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+ 
+  <body>
+   
+    <!-- 
+    what ia an object?
+    An object groups multiple values together 
+    -->
+
+    <!-- 
+    rules:
+
+    1. start with '{' and ends with '}'
+    2. we can put multiples Property-values seperated by (,) left side code called Propertise i.e 'name' right side code is values
+    3. we can save obj in variable.
+   -->
+
+   <!-- 
+   why use obj -
+   make our code more organized 
+   -->
+
+   <!-- 
+   Built-in obj -
+   1. JOSON: JavaScript Object Notation
+      - A Syntax
+      - similar to javascript obj.
+      - but has less features 
+      - we use JSON when we send data between computers
+      
+      -->
+
+  </body>
+
+  <script>
+    // const product ={
+    //   name: 'socks',
+    //   price: 1090
+    // };
+    // console.log(product);
+    // console.log(product.name); // access value of property of the objects
+    // console.log(product.price);
+
+    // product.name = 'cotton socks'; // using this we can update value of previous one or change it to something else.
+    // console.log(product);
+
+    // product.color = 'red'; // add new property-value into obj.
+    // console.log(product);
+
+    // delete product.color;  //delete property-value from obj.
+    // console.log(product);
+
+    const product2 = {
+      name: 'shirt',
+      'name-of': 'prasad', //or ['name-of']: 'prasad'
+
+      // objects inside obj is called nested obj
+      rating:{
+        stars:4.5,
+        count:33 
+      },
+
+      // we can add fucnctions in obj
+      fun: function func1() {
+        console.log('function in obj');
+        // // or
+        // return 'function inside obj';
+      }
+    }
+
+    
+    console.log(product2.name); //dot notation
+
+    console.log(product2.rating.stars); //access nested obj
+
+    console.log(product2.fun());  //access fun obj
+    product2.fun(); //access fun obj use this one
+
+    console.log(product2['name']);  //Bracket notation is used similar to dot notation the (lets us use properties that don't work with dot notation)
+
+    console.log(product2['name-of']); 
+    // e.g 
+    // console.log(product2.name-of) // it will give error
+    // console.log(product2['name-of']) // does not give an error
+
+
+  </script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+  </head>
+
+  <body>
+    <!--  
+    
+    COMPARISON OPERATORS :
+  <   greater than
+  >   less than
+  >=  greater than or equal to 
+  <=  less than or equal to 
+  === equal to  ===,==
+  !== not equal to
+
+ -->
+
+  </body>
+
+  <script>
+    // console.log('true is :' + typeof true);
+    // console.log(3 < 6);
+    // console.log(3 < 6);
+
+    // if (false) {
+    //   conso le.log('hello');
+    // }
+    // else {
+    //   consolr.log('hello');
+    // }
+
+    // if (12 >= 18) {
+    //   console.log('You can drive');
+    // } else if (12 >= 11) {
+    //   console.log('almost there!')
+    // } else {
+    //   console.log('You can not drive');
+    // }
+
+
+    // we can save in the variable below operator
+    // 1) ternary operator -
+
+    const result = true ? 'truthy' : 'falsy';
+    console.log(result);
+
+    const result1 = 0 ? 'truthy' : 'falsy';
+    console.log(result1);
+
+
+  // 2) AND (guard) operator &&=
+
+  //  to block right Code 
+
+   false && console.log('guard is off');
+   true && console.log('guard is on');
+
+
+  // 3) OR (default) operator || =
+
+      const currency = 'EUR' || 'USD';   
+      console.log(currency);
+
+// right side code is default value = USD
+
+      const currency1 = undefined || 'USD';   
+      console.log(currency1);
+
+
+  </script>
+</html>
